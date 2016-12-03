@@ -1,7 +1,6 @@
 
 import Data.List.Split
 import Data.List
-import Debug.Trace
 
 type Length = Int
 

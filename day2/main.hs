@@ -1,6 +1,5 @@
 import Data.List.Split
 import qualified Data.Map as Map
-import Debug.Trace
 
 type Key = Int
 type Coord = (Int, Int)
