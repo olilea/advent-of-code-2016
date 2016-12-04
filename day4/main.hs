@@ -19,8 +19,8 @@ getChecksum :: String -> String
 getChecksum s = takeWhile (\c -> c /= ']') $ tail $ dropWhile (\c -> c /= '[') s
 
 parse :: String -> [Room]
-parse s = let rs = lines s in
-	List.map (\r -> (getName r, getId r, getChecksum r)) rs
+parse s = let ls = lines s in
+	List.map (\r -> (getName r, getId r, getChecksum r)) ls
 
 sorter :: (Char, Int) -> (Char, Int) -> Ordering
 sorter (c1, no1) (c2, no2)
