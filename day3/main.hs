@@ -12,7 +12,7 @@ parseLine s = map read $ words s
 
 main :: IO ()
 main = do
-	f <- readFile "input.txt"
-	let parsed = map parseLine $ lines f
-	print $ length $ filter validTriangle parsed
-	print $ length $ filter validTriangle $ concat $ map transpose $ chunksOf 3 parsed
+    f <- readFile "input.txt"
+    let parsed = map parseLine $ lines f
+    print $ length $ filter validTriangle parsed
+    print $ length $ filter validTriangle $ concat $ map transpose $ chunksOf 3 parsed
